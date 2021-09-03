@@ -23,6 +23,7 @@ html {
 #navTop_box #logo>div {
     width: 80px; float: left; line-height: 70px;
 }
+#navTop_box #logo>div>img {width: 100%;}
 #navTop_box #logo>span {
     display: inline-block; font-size: 14px;
     position: relative; top: 30px; left: 10px;
@@ -36,7 +37,7 @@ html {
 }
 #navTop_box #topMenu li a { font-size: 18px;}
 #navTop_box #topMenu li>a.active {
-    color:#CBE3EE; border-bottom: 3px solid #CBE3EE;
+    color:#E7E5F1; border-bottom: 3px solid #E7E5F1;
     font-weight: bold; padding-bottom: 4px;
 }
 /* 공통*/
@@ -45,7 +46,7 @@ html {
 }
 /* s0 앞표지 calc시 부호 앞뒤를 붙이면 계산을 못한다.*/
 .section_home {
-    background: #CBE3EE;
+    background: #E7E5F1;
     width: calc(100% - 140px);
     height: calc(100% - 70px);
     margin: auto;
@@ -60,21 +61,23 @@ html {
 .s1>h2 {
     width: 100%; height: 100px; text-align: center;
     line-height: 100px; color: #fff; font-size: 40px;
-    background: lightblue;
+    background: #E7E5F1;
 }
 .pr_container {
     display: flex;
     width: 80%;
     margin: auto;
     margin-top: 100px;
+    gap: 20px;
 }
 .pr_profile {
     flex: 1;
     padding-left: 60px;
 }
+
 .pr_profile>ul {
     margin-top: 20px;
-    border-left: 7px solid lightblue;
+    border-left: 7px solid #E7E5F1;
 }
 .pr_profile>ul>li {
     padding-left: 30px; line-height: 30px;
@@ -89,7 +92,7 @@ html {
     justify-content: space-between;
 }
 .pr_title {
-    border-left: 5px solid lightblue;
+    border-left: 5px solid #E7E5F1;
     padding-left: 10px;
 }
 .pr_date {
@@ -101,15 +104,15 @@ html {
     line-height: 1.5;
     float: left;
     padding-top: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
 }
 .pr_txt>div {
     font-weight: bold;
 }
 .ct_inbox {
     padding: 20px;
-    background: #eee;
-    border: 5px double #ccc;
+    background: #E7E5F1;
+    border: 5px double #E7E5F1;
 }
 .ct_title {
     text-align: center;
@@ -139,7 +142,7 @@ html {
 .section_contents>h1 {
     width: 100%; height: 100px; text-align: center;
     line-height: 100px; color: #fff; font-size: 40px;
-    background: lightblue;
+    background: #E7E5F1;
 }
 .slide_wrap {
     display: flex;
@@ -211,11 +214,11 @@ html {
     transition: all 0.5s;
 }
 .pf_gosite a:hover {
-    color: #fff; border: 1px solid lightblue;
+    color: #fff; border: 1px solid lightgray;
 }
 .pf_gosite a:before {
     content: ""; z-index: -1;
-    position: absolute; background: lightblue;
+    position: absolute; background: #E7E5F1;
     transition: 1s;
     left: 50%; top: 0;
     transform: translateX(-50%);
@@ -419,9 +422,14 @@ html {
     
     
     /*********** s2 포트폴리오 ********/
+    .s2>h1 {
+        height: 50px;
+        line-height: 50px;
+        font-size: 23px;
+    }
     .slide {
         flex-direction: column;
-        margin: 0px 67px;
+        margin: 0px 35px;
     }
     .slide>.image {
         width: 82%;
@@ -433,11 +441,30 @@ html {
         top: 10vh;
         width: 80%;
     }
+    .slide .pf_txt_container .pf_title {
+        height: 35px;
+        line-height: 35px;
+        font-size: 16px;
+    }
+    .slide .pf_txt_container table {
+        width: 95%;
+        margin: auto;
+        line-height: 1.5;
+        font-size: 13px;
+        margin-top: 10px;
+    }
     .pf_gosite {
-        margin-top: 30px;
+        width: 50%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .pf_gosite a {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 14px;
     }
     .left_arrow, .right_arrow {
-        width: 30px;
+        width: 20px; top: 30%;
     }
  
 }
